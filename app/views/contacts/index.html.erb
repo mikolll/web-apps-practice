@@ -1,0 +1,21 @@
+<%
+    contacts = Contact.all
+%>
+
+
+<h1>A Contacts Page!!</h1>
+
+<ul>
+<% for contact in contacts %>
+ <li>
+ <%= contact["first_name"]%> 
+ <%= contact["last_name"]%>
+ </li>
+<%end%>
+
+ <table>
+  <tr>
+   <th>First Name</th>
+   <th>Last Name</th>
+   <th>Email</th>
+   <th>Phone Number</th>
